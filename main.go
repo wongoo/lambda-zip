@@ -15,8 +15,8 @@ import (
 
 func main() {
 	app := cli.NewApp()
-	app.Name = "gozip"
-	app.Usage = "Put an executable and others into a zip file"
+	app.Name = "lambda-zip"
+	app.Usage = "Put an executable and others into a zip file for lambda"
 
 	app.Action = func(c *cli.Context) error {
 		if !c.Args().Present() {
